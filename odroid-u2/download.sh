@@ -10,3 +10,4 @@ wget -c -O tzsw.bin https://raw.githubusercontent.com/hardkernel/u-boot/odroid-v
 wget -c http://builder.mdrjr.net/tools/firmware.tar.xz
 
 wget -c http://mirror.yandex.ru/ubuntu-cdimage/ubuntu-core/releases/14.04.3/release/ubuntu-core-14.04.3-core-armhf.tar.gz
+wget -c http://mirror.yandex.ru/ubuntu-cdimage/ubuntu-core/releases/14.04.3/release/ubuntu-core-14.04.2-core-armhf.tar.gz
