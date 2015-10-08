@@ -31,9 +31,9 @@ mkdir -p rootfs/boot
 mount ${DEVICE}p1 rootfs/boot
 
 
-bsdtar -xpf ubuntu-core-14.04.2-core-armhf.tar.gz -C rootfs
+bsdtar -xpf downloaded/ubuntu-core-14.04.3-core-armhf.tar.gz -C rootfs
 
-bsdtar -xpf odroidxu3.tar.xz -C rootfs
+bsdtar -xpf downloaded/odroidxu3.tar.xz -C rootfs
 
 cp odroidxu3.boot.ini       rootfs/boot/boot.ini
 cp shadow                   rootfs/etc/
@@ -49,7 +49,7 @@ for i in "# Exynos UART" ttySAC0 ttySAC1 ttySAC2 ttySAC3; do
     echo $i >> rootfs/etc/securetty
 done
 
-BLTEMP=./boot
+BLTEMP=./downloaded
 
 # use emmc only if connected to EMMC slot
 #signed_bl1_position=0
