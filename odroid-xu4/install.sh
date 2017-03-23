@@ -31,7 +31,7 @@ mkdir -p rootfs/boot
 mount ${DEVICE}p1 rootfs/boot
 
 
-bsdtar -xpf downloaded/ubuntu-core-14.04.3-core-armhf.tar.gz -C rootfs
+bsdtar -xpf downloaded/ubuntu-base-14.04.5-base-armhf.tar.gz -C rootfs
 
 bsdtar -xpf downloaded/odroidxu3.tar.xz -C rootfs
 
